@@ -36,6 +36,20 @@ class Tamagotchi:
         else:
             print(f"{self.name} is no longer alive and cannot be healed.")
 
+    def update_needs(self):
+        if not self.alive:
+            return
+        self.hunger = max(0, min(100, self.hunger + 5))
+        self.exhaustion = max(0, min(100, self.exhaustion + 3))
+        self.boredom = max(0, min(100, self.boredom + 5))
+
+        if self.hunger >= 80:
+            self.health = max(0, min(100, self.health - 5))
+        if self.exhaustion >= 80:
+            self.health = max(0, min(100, self.health - 5))
+        if self.boredom >= 80:
+            self.health = max(0, min(100, self.health - 3))
+
     def display_status(self):
         print(f"\n----- {self.name}'s Status -----")
         
