@@ -48,13 +48,3 @@ class Game:
             print(f"Average exhaustion of living pets: {total_exhaustion / count_alive}")
         else:
             print("No living pets.")
-
-
-if __name__ == "__main__":
-    game = Game()
-
-    game.pets[0].health = 100
-    game.pets[1].health = 60
-    game.pets[2].health = 0
-
-    game.display_statistics()
