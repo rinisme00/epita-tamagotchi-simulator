@@ -1,5 +1,9 @@
 # Tamagotchi Simulator
 
+## GitHub Repository
+
+Source code: [epita-tamagotchi-simulator](https://github.com/rinisme00/epita-tamagotchi-simulator)
+
 ## Description
 
 Tamagotchi Simulator is a command-line virtual pet simulation game developed in Python.
