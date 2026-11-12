@@ -42,9 +42,9 @@ class Game:
         print(f"Dead pets: {count_dead}")
 
         if count_alive > 0:
-            print(f"Average health of living pets: {total_health / count_alive}")
-            print(f"Average hunger of living pets: {total_hunger / count_alive}")
-            print(f"Average boredom of living pets: {total_boredom / count_alive}")
-            print(f"Average exhaustion of living pets: {total_exhaustion / count_alive}")
+            print(f"Average health of living pets: {total_health / count_alive:.2f}")
+            print(f"Average hunger of living pets: {total_hunger / count_alive:.2f}")
+            print(f"Average boredom of living pets: {total_boredom / count_alive:.2f}")
+            print(f"Average exhaustion of living pets: {total_exhaustion / count_alive:.2f}")
         else:
             print("No living pets.")
